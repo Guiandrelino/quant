@@ -2,6 +2,8 @@
 
 **Factor investing · Portfolio construction · Investment research**
 
+![Brazilian Equity Lab — demonstração sintética](docs/assets/linkedin-cover.png)
+
 Framework de pesquisa quantitativa para investigar estratégias long-only de ações brasileiras com foco em **gestão e análise de investimentos**. Python modular, backtest auditável e comunicação de risco — sem promessas de alpha.
 
 ![Python](https://img.shields.io/badge/Python-3.11%2B-3776AB?logo=python&logoColor=white)
@@ -169,6 +171,14 @@ docs/
 **Critério para a próxima entrega:** integrar base histórica auditada, congelar protocolo e publicar relatório de investimento com conclusões — positivas ou negativas — e análise de sensibilidade de parâmetros no desenvolvimento.
 
 ## Divulgação
+
+O [checklist de publicação](docs/publication-checklist.md) contém os passos para GitHub, GitHub Pages e LinkedIn. A capa está em `docs/assets/linkedin-cover.png`. O workflow `Publish research demo` publica um relatório navegável sem servidor, após habilitar GitHub Pages.
+
+Para gerar o kit localmente:
+
+```bash
+python scripts/build_publication.py
+```
 
 Veja [texto para LinkedIn e roteiro de entrevista](docs/linkedin.md). Publique gráficos com a identificação da base visível; não apresente retornos sintéticos como performance real.
 

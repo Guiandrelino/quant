@@ -138,6 +138,14 @@ Os testes verificam: ausência de dependência de dados futuros, fórmula exata 
 
 As faixas do `pyproject.toml` permitem instalação em diferentes plataformas; **não são um lockfile**. Cada experimento registra versões numéricas no manifest. Para reproduzir integralmente um ambiente publicado, capture também `python -m pip freeze > requirements-lock.txt`.
 
+## Arquitetura do projeto
+
+![Arquitetura do Brazilian Equity Lab: dados, sinais, carteiras, backtest, avaliação e comunicação, com orquestração e controles transversais](docs/assets/project-architecture.png)
+
+[Baixar a imagem em PNG para usar no post](docs/assets/project-architecture.png). O fluxo mostra as etapas da pesquisa; o dashboard apenas lê os artefatos gerados, sem recalibrar o holdout.
+
+Para recriar a imagem, instale a dependência opcional `Pillow` e execute `python docs/assets/generate_architecture.py`.
+
 ## Estrutura
 
 ```text
